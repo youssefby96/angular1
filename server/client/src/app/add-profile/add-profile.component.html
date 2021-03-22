@@ -1,0 +1,33 @@
+<div class="container" id="general">
+  <div>
+      <h2>Ajouter une publication  :</h2>
+  </div>
+
+
+  <form>
+
+  <div class ="col-sm-4 col-md-4 col-lg-4">
+  <label>Titre Publication</label>
+  <input type = "text" [(ngModel)]= "newPublication.titre" name ="titre" class="form-control" required>
+  </div>
+
+
+          <div class ="col-sm-2 col-md-2 col-lg-4">
+          <label>Description Publication </label>
+          <input type = "text" [(ngModel)]= "newPublication.description" name ="description" class="form-control" required>
+          </div>
+
+
+             <!-- <div class ="col-sm-4 col-md-4 col-lg-4">
+              <label>Date Creation</label>
+              <input type = "date" [(ngModel)]= "newPublication.dateCreation" name ="dateCreation" class="form-control">
+              </div>
+                    -->
+
+              <div class="mt-4 ml-3">
+                  <button id="btn" type="submit" (click)="addPublication()" class="btn btn-success" >Ajouter</button>
+             <!-- <div><h3>{{message}}</h3></div> -->
+              </div>
+
+  </form>
+  </div>

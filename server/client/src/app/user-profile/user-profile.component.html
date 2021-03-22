@@ -1,0 +1,39 @@
+<nav>
+<ul >
+ <i class="fa fa-sign-out fa-lg" aria-hidden="true" id='ic'></i>
+ <li class="log" (click)="onLogout()" >Logout</li>
+ <li class='insight'>Insight plus</li>
+ <li  routerLink="/addPublication" class="addpubl">Ajouter Publication</li>
+</ul>
+</nav>
+<!--   <p>welcome {{userDetails.username}}  </p> -->
+<div >
+
+<table   class="table-fill" >      <!--  *ngIf="userDetails"  -->
+  <thead>
+      <tr>
+          <th colspan="2" class="text-center">User Publications</th>
+      </tr>
+  </thead>
+  <tbody *ngFor="let publication of publications" >
+      <tr>
+          <td>titre</td>
+          <td>{{ publication.titre }}</td>     <!-- {{userDetails?.titre}} -->
+      </tr>
+      <tr>
+          <td>Description</td>
+          <td>{{ publication.description }}</td>     <!--  {{userDetails?.description}}  -->
+      </tr>
+
+      <tr>
+          <td colspan="2" class="text-center">
+              <!--  <input type="button" (click)="onLogout()" value="Logout" />  -->
+              <input type="button"  (click)="deletePublication()"   value="delete " />
+              <input type="button"  value="update" />
+          </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+
+

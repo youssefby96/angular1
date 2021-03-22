@@ -1,0 +1,54 @@
+.addpubl{
+  float: left;
+  margin-left: 50px;
+  margin-top : 10px;
+}
+
+ul {
+  margin-top : -10px;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: rgb(29, 35, 39);
+  margin-right: -12px;
+  margin-left: -12px;
+  padding: 10px 0px ;
+}
+
+li {
+  float: right;
+  color: white;
+  /*margin-left: -80px;*/
+  cursor: pointer;
+}
+.log{
+  margin-right: 10px!important;
+  margin-top: 10px;
+}
+#ic{
+  color:white;
+  float: right;
+  margin-top: 12px;
+  margin-right: 90px!important;
+}
+.insight{
+  float: left;
+  margin-left: 50px;
+  padding:0px 40px;
+  background-color: rgb(90, 47, 47);
+  text-decoration: none;
+  margin-top: 5px;
+  color: white;
+  font-size: 1.5rem;
+}
+li a {
+  display: block;
+  color: rgb(235, 235, 235);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
